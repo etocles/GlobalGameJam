@@ -57,14 +57,14 @@ public class Movement : MonoBehaviour
         {
             grounded = true;
             // transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            rb.constraints = RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
         }
         else
         {
             grounded = false;
 
-            rb.constraints = RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         }
         rb.constraints = RigidbodyConstraints.FreezeRotation;
 

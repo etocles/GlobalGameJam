@@ -57,6 +57,7 @@ public class EggContainer : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
         }
+        transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
     }
 
     private void Update()
@@ -67,6 +68,7 @@ public class EggContainer : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
         }
+        transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
     }
 
     private void LateUpdate()
@@ -76,6 +78,7 @@ public class EggContainer : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
         }
+        transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -141,7 +144,7 @@ public class EggContainer : MonoBehaviour
     public void AttachToElephant(Movement elephant)
     {
         holder = elephant;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ| RigidbodyConstraints.FreezePositionY;
     }
 
     public void SetNewPosition(Transform newTransform)
