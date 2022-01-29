@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Eggs\FragileEgg.cs" />
     <Compile Include="Assets\Scripts\Spawner\ObjectSpawnManager.cs" />
     <Compile Include="Assets\Scripts\ObjectRotator.cs" />
+    <Compile Include="Assets\Scripts\ObjectMover.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
