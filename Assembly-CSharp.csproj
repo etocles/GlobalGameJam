@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Eggs\EggContainer.cs" />
+    <Compile Include="Assets\Scripts\TrunkAimer.cs" />
     <Compile Include="Assets\Scripts\SwingPoint.cs" />
     <Compile Include="Assets\Scripts\ObjectMover.cs" />
     <Compile Include="Assets\Scripts\PlayerCamera.cs" />
