@@ -26,6 +26,10 @@ public class ObjectSpawner : MonoBehaviour
     [Space]
     public float spawnRadius = 0;
 
+    [Space]
+    public float scaleMin = 1;
+    public float scaleMax = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +46,8 @@ public class ObjectSpawner : MonoBehaviour
         GameObject objPrefab = ObjectSpawnManager.instance.GetRandomObject();
         Vector3 spawnPos = transform.position + (Random.insideUnitSphere * spawnRadius);
         GameObject obj = Instantiate(objPrefab, spawnPos, Random.rotation);
+        obj.transform.localScale = Vector3.one * Random.Range(scaleMin, scaleMax);
+
         obj.GetComponent<Rigidbody>().AddForce(spawnDir * Random.Range(objSpeedMin, objSpeedMax), ForceMode.VelocityChange);
     }
 

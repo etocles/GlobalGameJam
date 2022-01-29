@@ -5,6 +5,20 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class ThrownObject : MonoBehaviour
 {
+    public float lifetime;
+
+    public void Start()
+    {
+        StartCoroutine(IKillMyself(lifetime));
+    }
+
+    IEnumerator IKillMyself(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
+    }
+
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Elephant")
