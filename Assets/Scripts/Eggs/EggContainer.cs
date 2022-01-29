@@ -21,6 +21,11 @@ public class EggContainer : MonoBehaviour
 
     public Movement holder;
 
+    private void Start()
+    {
+        
+    }
+
     public void LoseEggsWithTeleport(int numEggs)
     {
         int i = 0;
@@ -36,6 +41,7 @@ public class EggContainer : MonoBehaviour
     }
     
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag != "Elephant")
@@ -43,9 +49,19 @@ public class EggContainer : MonoBehaviour
 
         }
     }
+    private void FixedUpdate()
+    {
+        PullEggs(1200 * Time.fixedDeltaTime);
+    }
+
+    private void Update()
+    {
+        //PullEggs(1200 * Time.deltaTime);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
+        print(other.gameObject.name);
         other.GetComponent<FragileEgg>().SetContainer(this);
         eggs.Add(other.GetComponent<FragileEgg>());
     }

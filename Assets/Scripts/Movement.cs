@@ -43,8 +43,6 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         bc = GetComponent<BoxCollider>();
         lr = GetComponent<LineRenderer>();
-
-        PickUpContainer();
     }
 
     private void CheckContainerRange()
