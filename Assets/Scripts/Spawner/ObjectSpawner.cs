@@ -82,4 +82,14 @@ public class ObjectSpawner : MonoBehaviour
         Vector3 target = (transform.position + transform.forward) + (transform.rotation * new Vector3(circle.x, circle.y));
         return (target - transform.position).normalized;
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawRay(new Ray(transform.position, transform.forward));
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawRay(new Ray(transform.position, transform.forward));
+    }
 }
