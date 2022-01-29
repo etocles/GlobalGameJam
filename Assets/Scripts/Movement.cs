@@ -92,15 +92,17 @@ public class Movement : MonoBehaviour
             } else
             {
                 SwingPoint closest = GetClosestSwingPoint();
-                if (closest != null)
-                {
-
-                }
+                if (closest != null) { 
+}
             }
         }
         
     }
 
+    private SwingPoint GetClosestSwingPoint()
+    {
+        return null;
+    }
 
     public void ReadInputs()
     {
