@@ -298,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265617398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 11, z: 6.5}
+  m_LocalPosition: {x: -2.09, y: 1.64, z: -20.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -319,7 +319,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elephant: {fileID: 437503103}
   offset: {x: 0, y: 1, z: -3.5}
+  mouseScrollMultiplier: -0.2
+  offsetMult: 0
   speedOfFollow: 0.8
+  zoomMin: 1
+  zoomMax: 7
 --- !u!1 &437503103
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +338,7 @@ GameObject:
   - component: {fileID: 437503105}
   - component: {fileID: 437503104}
   - component: {fileID: 437503109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Elephant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,14 +453,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bc: {fileID: 0}
-  speed: 10
+  speed: 4.02
+  speedAir: 2.86
   velocityCap: 10
   GroundLayer:
     serializedVersion: 2
     m_Bits: 129
   grounded: 0
   triedJump: 0
-  jumpForce: 20
+  jumpForce: 4
   movementVector: {x: 0, y: 0, z: 0}
 --- !u!1 &833725414
 GameObject:
@@ -593,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938666968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: THIS THING WILL NEVER ROTATE DUE TO PHYSICS
   m_TagString: Untagged
   m_Icon: {fileID: 0}

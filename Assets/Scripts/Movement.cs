@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
 
     public BoxCollider bc;
     public float speed = 1f;
+    public float speedAir = 1f;
 
     public float velocityCap;
 
@@ -104,7 +105,8 @@ public class Movement : MonoBehaviour
 
     public void AddVelocity()
     {
-        movementVector = movementVector.normalized * speed;
+        
+        movementVector = movementVector.normalized * (grounded ? speed : speedAir);
 
         if ((movementVector.z > 0 && rb.velocity.z > velocityCap) || (movementVector.z < 0 && rb.velocity.z < -velocityCap))
         {

@@ -53,7 +53,8 @@
     <UnityVersion>2021.2.9f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\Camera.cs" />
     <Compile Include="Assets\Scripts\Spawner\ThrownObject.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\Eggs\EggContainer.cs" />
@@ -61,10 +62,6 @@
     <Compile Include="Assets\Scripts\Eggs\FragileEgg.cs" />
     <Compile Include="Assets\Scripts\Spawner\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\EndPortal.cs" />
-=======
-    <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\Camera.cs" />
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
