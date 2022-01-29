@@ -51,22 +51,35 @@ public class EggContainer : MonoBehaviour
     }
     private void FixedUpdate()
     {
+
         PullEggs(1200 * Time.fixedDeltaTime);
+        if (holder != null)
+        {
+            GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
+        }
     }
 
     private void Update()
+    {
+
+        //PullEggs(1200 * Time.deltaTime);
+        if (holder != null)
+        {
+            GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
+        }
+    }
+
+    private void LateUpdate()
     {
         //PullEggs(1200 * Time.deltaTime);
         if (holder != null)
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
-            GetComponent<Rigidbody>().angularVelocity = new Vector3(0, (holder.eggHoldPosition.rotation.eulerAngles.y - transform.rotation.eulerAngles.y) % 180.0f, 0) * 10;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.GetComponent<FragileEgg>() != null)
         {
             print(other.gameObject.name);
