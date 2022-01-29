@@ -52,6 +52,7 @@ public class Movement : MonoBehaviour
         CheckContainerRange();
         ReadInputs();
 
+        Debug.DrawLine(transform.position + bc.center, transform.position, Color.red, 20);
         if (Physics.OverlapBox(transform.position + bc.center, bc.size, Quaternion.Euler(0f, 0f, 0f), GroundLayer).Length != 0)
         {
             grounded = true;

@@ -141,7 +141,7 @@ public class EggContainer : MonoBehaviour
     public void AttachToElephant(Movement elephant)
     {
         holder = elephant;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
     public void SetNewPosition(Transform newTransform)
