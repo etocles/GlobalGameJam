@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,6 +53,7 @@
     <UnityVersion>2021.2.9f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Spawner\ObjectSpawner.cs" />
     <Compile Include="Assets\Scripts\Spawner\ObjectSpawnManager.cs" />
     <Compile Include="Assets\Scripts\Spawner\ThrownObject.cs" />
@@ -60,6 +61,14 @@
     <Compile Include="Assets\Scripts\Eggs\FragileEgg.cs" />
     <Compile Include="Assets\Scripts\EndPortal.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
+=======
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\ObjectSpawner.cs" />
+    <Compile Include="Assets\Scripts\ThrownObject.cs" />
+    <Compile Include="Assets\Scripts\ObjectSpawnManager.cs" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
