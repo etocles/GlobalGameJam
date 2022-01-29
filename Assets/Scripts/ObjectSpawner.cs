@@ -32,6 +32,8 @@ public class ObjectSpawner : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
         spawnAngle = GetComponent<Light>().spotAngle;
         GetComponent<Light>().enabled = false;
+
+        SetSpawnerActive(true);
     }
 
     private void SpawnObject()
