@@ -46,7 +46,7 @@ public class ObjectSpawner : MonoBehaviour
         GameObject objPrefab = ObjectSpawnManager.instance.GetRandomObject();
         Vector3 spawnPos = transform.position + (Random.insideUnitSphere * spawnRadius);
         GameObject obj = Instantiate(objPrefab, spawnPos, Random.rotation);
-        obj.transform.localScale = Vector3.one * Random.Range(scaleMin, scaleMax);
+        obj.transform.localScale *= Random.Range(scaleMin, scaleMax);
 
         obj.GetComponent<Rigidbody>().AddForce(spawnDir * Random.Range(objSpeedMin, objSpeedMax), ForceMode.VelocityChange);
     }
