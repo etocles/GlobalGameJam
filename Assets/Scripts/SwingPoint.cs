@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody)), RequireComponent(typeof(HingeJoint))]
 public class SwingPoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        GetComponent<Rigidbody>().isKinematic = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Swing(Movement elephant)
     {
-        
+        print("SWING");
+        GetComponent<HingeJoint>().connectedBody = elephant.GetComponent<Rigidbody>();
+    }
+
+    public void StopSwing(Movement elephant)
+    {
+        GetComponent<HingeJoint>().connectedBody = null;
     }
 }

@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     public LayerMask GroundLayer;
 
     public bool grounded;
+    public SwingPoint swinger;
 
     public bool triedJump;
     public float jumpForce = 3;
@@ -31,7 +32,8 @@ public class Movement : MonoBehaviour
     public Transform eggDropPosition;
 
     public float eggPickupRange;
-
+    [Space]
+    public float minDistToSwing;
 
     private LineRenderer lr;
 
@@ -81,6 +83,9 @@ public class Movement : MonoBehaviour
 
         AddVelocity();
 
+
+
+
         if (triedJump)
         {
             triedJump = false;
@@ -89,11 +94,14 @@ public class Movement : MonoBehaviour
                 Vector3 newvel = rb.velocity;
                 newvel.y = jumpForce;
                 rb.velocity = newvel;
+            } else if (swinger == null)
+            {
+                swinger = GetClosestSwingPoint();
+                swinger?.Swing(this);
             } else
             {
-                SwingPoint closest = GetClosestSwingPoint();
-                if (closest != null) { 
-}
+                swinger.StopSwing(this);
+                swinger = null;
             }
         }
         
@@ -101,7 +109,18 @@ public class Movement : MonoBehaviour
 
     private SwingPoint GetClosestSwingPoint()
     {
-        return null;
+        SwingPoint[] points = FindObjectsOfType<SwingPoint>();
+        SwingPoint best = null;
+        float min = minDistToSwing * minDistToSwing;
+        foreach (SwingPoint sp in points)
+        {
+            if ((sp.transform.position - transform.position).sqrMagnitude < min)
+            {
+                min = (sp.transform.position - transform.position).sqrMagnitude;
+                best = sp;
+            }
+        }
+        return best;
     }
 
     public void ReadInputs()
@@ -173,6 +192,7 @@ public class Movement : MonoBehaviour
 
     public void PutDownContainer()
     {
+        eggContainer.SetNewPosition(eggDropPosition);
         eggContainer.DetachFromElephant();
     }
 
