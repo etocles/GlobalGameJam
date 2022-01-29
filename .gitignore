@@ -1,6 +1,7 @@
 Temp/
 Library/
 Logs/
+UserSettings/
 Temp/Unity.VisualStudio.Editor.dll.hash
 Temp/Unity.VSCode.Editor.dll.hash
 Temp/UnityEditor.TestRunner.dll.hash
