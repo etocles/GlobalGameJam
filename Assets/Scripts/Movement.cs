@@ -125,7 +125,6 @@ public class Movement : MonoBehaviour
 
     public void ReadInputs()
     {
-
         movementVector += Input.GetAxisRaw("Horizontal") * pCam.GetRight();
         movementVector += Input.GetAxisRaw("Vertical") * pCam.GetForward();
 
@@ -152,6 +151,9 @@ public class Movement : MonoBehaviour
         
         movementVector = movementVector.normalized * (grounded ? speed : speedAir);
 
+        if (movementVector.sqrMagnitude > 0.01)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(movementVector.x, 0, movementVector.z).normalized, Vector3.up), 20f * Time.deltaTime);
+
         if ((movementVector.z > 0 && rb.velocity.z > velocityCap) || (movementVector.z < 0 && rb.velocity.z < -velocityCap))
         {
             movementVector.z = 0;
@@ -164,12 +166,6 @@ public class Movement : MonoBehaviour
 
 
         rb.AddForce(movementVector * Time.deltaTime , ForceMode.Impulse);
-
-        // Rotate the forward vector towards the target direction by one step
-        // Vector3 newDirection = Vector2.RotateTowards(transform.forward, movementVector, rotSpeed * Time.deltaTime, 0.0f);
-        // Calculate a rotation a step closer to the target and applies rotation to this object
-        if (movementVector.sqrMagnitude > 0.01)
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(rb.velocity.x, 0, rb.velocity.z).normalized, Vector3.up), 5f * Time.deltaTime);
 
         print(movementVector);
 
