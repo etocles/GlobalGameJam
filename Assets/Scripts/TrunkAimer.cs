@@ -40,20 +40,23 @@ public class TrunkAimer : MonoBehaviour
         Vector3 origin = point;
         Vector3 dir = cam.transform.forward;
         float radius = 5.0f;
+
         // IF CLOSE TO COLLIDING WITH SOMETHING NEW, RESET OBJECT HIT AND TIME REMAINING
-        if (Physics.SphereCast(cam.transform.position, radius, dir, out hit))
+        if (Physics.SphereCast(cam.transform.position+cam.transform.forward, radius, dir, out hit))
         {
             lastObjectHit = hit.transform;
             print("HIT: " + lastObjectHit.gameObject.name);
             timeRemaining = timeToSet;
-        }
-        // OVERWRITE THE POINT
-        if (lastObjectHit != null && timeRemaining >= 0.0f)
-        {
             point.z = lastObjectHit.position.z;
             point.y = lastObjectHit.position.y;
-            timeRemaining -= Time.deltaTime;
         }
+        //// OVERWRITE THE POINT
+        //if (lastObjectHit != null && timeRemaining >= 0.0f)
+        //{
+        //    point.z = lastObjectHit.position.z;
+        //    point.y = lastObjectHit.position.y;
+        //    timeRemaining -= Time.deltaTime;
+        //}
 
         // move the trunk of the elephant to that position.
         elephantTrunkTip.position = point;
