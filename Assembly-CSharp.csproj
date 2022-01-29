@@ -66,7 +66,8 @@
     <Compile Include="Assets\Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Eggs\FragileEgg.cs" />
     <Compile Include="Assets\Scripts\Spawner\ObjectSpawnManager.cs" />
-    <Compile Include="Assets\TitleManager.cs" />
+    <Compile Include="Assets\Scripts\TitleManager.cs" />
+    <Compile Include="Assets\Scripts\KillZone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
