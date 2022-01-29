@@ -6,7 +6,7 @@ using UnityEngine;
 public class EggContainer : MonoBehaviour
 {
     public Transform eggPullPosition;
-
+    public float eggPullForce;
     [Space]
     public float eggLossAngle = 50.0f;
     public Transform eggLossPosition;
