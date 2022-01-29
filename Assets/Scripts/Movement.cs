@@ -26,18 +26,42 @@ public class Movement : MonoBehaviour
     public EggContainer eggContainer;
     public float throwForce = 1000;
 
+    [Space]
+    public Transform eggHoldPosition;
+    public Transform eggDropPosition;
+
+    public float eggPickupRange;
+
+
+    private LineRenderer lr;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         bc = GetComponent<BoxCollider>();
+        lr = GetComponent<LineRenderer>();
+
+        PickUpContainer();
     }
 
+    private void CheckContainerRange()
+    {
+        lr.enabled = false;
+        if (eggContainer.holder == this)
+            return;
+
+        if ((eggContainer.transform.position - transform.position).sqrMagnitude < eggPickupRange * eggPickupRange)
+        {
+            lr.enabled = true;
+            lr.SetPositions(new Vector3[] { transform.position, eggContainer.transform.position });
+        }
+    }
     
     // Update is called once per frame
     void Update()
     {
+        CheckContainerRange();
         ReadInputs();
 
         if (Physics.OverlapBox(transform.position - new Vector3(0, .2f, 0), bc.size/2, Quaternion.Euler(0f, 0f, 0f), GroundLayer).Length != 0)
@@ -65,11 +89,20 @@ public class Movement : MonoBehaviour
                 Vector3 newvel = rb.velocity;
                 newvel.y = jumpForce;
                 rb.velocity = newvel;
+            } else
+            {
+                SwingPoint closest = GetClosestSwingPoint();
+                if (closest != null) { 
+}
             }
         }
         
     }
 
+    private SwingPoint GetClosestSwingPoint()
+    {
+        return null;
+    }
 
     public void ReadInputs()
     {
@@ -80,7 +113,18 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             triedJump = true;
-        }        
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (eggContainer.holder == this)
+                PutDownContainer();
+            else
+                PickUpContainer();
+        }
+
+        if (Input.GetMouseButtonDown(1))
+            ThrowContainer();
     }
 
 
@@ -114,15 +158,22 @@ public class Movement : MonoBehaviour
         movementVector = Vector3.zero;
     }
 
-    public void PickUpContainer(EggContainer eggContainer)
+    public void PickUpContainer()
     {
-        eggContainer.holder = this;
+        // NO pickup if not in range
+        if ((eggContainer.transform.position - transform.position).sqrMagnitude > eggPickupRange * eggPickupRange)
+            return;
 
+        eggContainer.holder = this;
+        eggContainer.SetNewPosition(eggHoldPosition);
+        eggContainer.transform.parent = eggHoldPosition;
+
+        eggContainer.AttachToElephant(this);
     }
 
     public void PutDownContainer()
     {
-
+        eggContainer.DetachFromElephant();
     }
 
     public void ThrowContainer()
@@ -130,7 +181,7 @@ public class Movement : MonoBehaviour
         if (eggContainer.holder != this)
             return;
         Vector3 projectDir =(transform.forward + transform.up).normalized;
-        // eggContainer.DetachFromElephant();
+        eggContainer.DetachFromElephant();
         eggContainer.GetComponent<Rigidbody>().AddForce(projectDir * throwForce, ForceMode.VelocityChange);
     }
 }
