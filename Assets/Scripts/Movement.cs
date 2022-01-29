@@ -19,6 +19,14 @@ public class Movement : MonoBehaviour
     public bool triedJump;
     public float jumpForce = 3;
     public Vector3 movementVector;
+
+    public PlayerCamera pCam;
+    public float rotSpeed;
+
+    public EggContainer eggContainer;
+    public float throwForce = 1000;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,31 +34,26 @@ public class Movement : MonoBehaviour
         bc = GetComponent<BoxCollider>();
     }
 
-
-    private void Update()
+    
+    // Update is called once per frame
+    void Update()
     {
         ReadInputs();
-
-
-
-    }
-    // Update is called once per frame
-    void FixedUpdate()
-    {
 
         if (Physics.OverlapBox(transform.position - new Vector3(0, .2f, 0), bc.size/2, Quaternion.Euler(0f, 0f, 0f), GroundLayer).Length != 0)
         {
             grounded = true;
-            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
+            // transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            rb.constraints = RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
 
         }
         else
         {
             grounded = false;
 
-            rb.constraints = RigidbodyConstraints.FreezeRotationY & RigidbodyConstraints.FreezeRotationZ;
+            rb.constraints = RigidbodyConstraints.FreezeRotationX & RigidbodyConstraints.FreezeRotationZ;
         }
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
 
         AddVelocity();
 
@@ -71,35 +74,13 @@ public class Movement : MonoBehaviour
     public void ReadInputs()
     {
 
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            movementVector.z = 1;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            movementVector.z = -1;
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            movementVector.x = - 1;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            movementVector.x = 1;
-        }
-
+        movementVector += Input.GetAxisRaw("Horizontal") * pCam.GetRight();
+        movementVector += Input.GetAxisRaw("Vertical") * pCam.GetForward();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             triedJump = true;
-        }
-        
-
-        
+        }        
     }
 
 
@@ -119,13 +100,39 @@ public class Movement : MonoBehaviour
         }
 
 
-        rb.AddForce(movementVector, ForceMode.Impulse);
+        rb.AddForce(movementVector * Time.deltaTime , ForceMode.Impulse);
+
+        // Rotate the forward vector towards the target direction by one step
+        // Vector3 newDirection = Vector2.RotateTowards(transform.forward, movementVector, rotSpeed * Time.deltaTime, 0.0f);
+        // Calculate a rotation a step closer to the target and applies rotation to this object
+        if (movementVector.sqrMagnitude > 0.01)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(rb.velocity.x, 0, rb.velocity.z).normalized, Vector3.up), 5f * Time.deltaTime);
+
         print(movementVector);
 
 
         movementVector = Vector3.zero;
     }
 
+    public void PickUpContainer(EggContainer eggContainer)
+    {
+        eggContainer.holder = this;
+
+    }
+
+    public void PutDownContainer()
+    {
+
+    }
+
+    public void ThrowContainer()
+    {
+        if (eggContainer.holder != this)
+            return;
+        Vector3 projectDir =(transform.forward + transform.up).normalized;
+        // eggContainer.DetachFromElephant();
+        eggContainer.GetComponent<Rigidbody>().AddForce(projectDir * throwForce, ForceMode.VelocityChange);
+    }
 }
 
 

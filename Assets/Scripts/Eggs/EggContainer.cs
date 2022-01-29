@@ -19,6 +19,7 @@ public class EggContainer : MonoBehaviour
 
     private HashSet<FragileEgg> eggs;
 
+    public Movement holder;
 
     public void LoseEggsWithTeleport(int numEggs)
     {
