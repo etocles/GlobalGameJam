@@ -13,10 +13,17 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< Updated upstream
   - Elephant
   - ThrownObject
   - EggContainer
   - Egg
+=======
+  - Main Character
+  - Ground
+  - 
+  - 
+>>>>>>> Stashed changes
   - 
   - 
   - 
