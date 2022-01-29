@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Elephant
-  - EggContainer
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,17 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-<<<<<<< Updated upstream
-  - Elephant
-  - ThrownObject
-  - EggContainer
-  - Egg
-=======
-  - Main Character
-  - Ground
   - 
   - 
->>>>>>> Stashed changes
+  - 
+  - 
   - 
   - 
   - 
