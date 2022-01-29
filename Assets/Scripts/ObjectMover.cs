@@ -18,7 +18,7 @@ public class ObjectMover : MonoBehaviour
     {
         startPos = transform.position;
         endPos = endPosObject.position;
-        Destroy(endPosObject);
+        Destroy(endPosObject.gameObject);
     }
 
     // Update is called once per frame

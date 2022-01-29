@@ -21,6 +21,8 @@ public class PlayerCamera : MonoBehaviour
     public float minVertAngle = -160;
     public float maxVertAngle = -20;
 
+    public Movement elephant;
+
     void Start()
     {
         offset = cameraTarget.transform.position - transform.position;
@@ -35,6 +37,8 @@ public class PlayerCamera : MonoBehaviour
         transform.eulerAngles = new Vector3(-vertLook, transform.eulerAngles.y + horiLook, 0);
 
         transform.position = Vector3.Lerp(transform.position, cameraTarget.transform.position - (transform.rotation * offset), speedOfFollow);
+
+
     }
 
     public Vector3 GetForward()

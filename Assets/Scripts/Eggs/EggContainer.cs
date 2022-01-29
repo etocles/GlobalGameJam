@@ -17,7 +17,7 @@ public class EggContainer : MonoBehaviour
     public GameObject invisibleTop;
     [Space]
 
-    private HashSet<FragileEgg> eggs;
+    private HashSet<FragileEgg> eggs = new HashSet<FragileEgg>();
 
     public Movement holder;
 
@@ -88,5 +88,33 @@ public class EggContainer : MonoBehaviour
         Vector2 circle = Random.insideUnitCircle * radius;
         Vector3 target = (transform.position + transform.forward) + (transform.rotation * new Vector3(circle.x, circle.y));
         return (target - transform.position).normalized;
+    }
+
+    public void DetachFromElephant()
+    {
+        holder = null;
+        transform.parent = null;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+    }
+
+    public void AttachToElephant(Movement elephant)
+    {
+        holder = elephant;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void SetNewPosition(Transform newTransform)
+    {
+        foreach (FragileEgg egg in eggs)
+        {
+            egg.transform.parent = transform;
+        }
+        transform.position = newTransform.position;
+        transform.rotation = newTransform.rotation;
+
+        foreach (FragileEgg egg in eggs)
+        {
+            egg.transform.parent = null;
+        }
     }
 }

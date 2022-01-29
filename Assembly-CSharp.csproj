@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Spawner\ObjectSpawnManager.cs" />
     <Compile Include="Assets\Scripts\ObjectRotator.cs" />
     <Compile Include="Assets\Scripts\ObjectMover.cs" />
+    <Compile Include="Assets\Scripts\SwingPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
