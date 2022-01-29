@@ -58,6 +58,8 @@
     <Compile Include="Assets\Scripts\Spawner\ThrownObject.cs" />
     <Compile Include="Assets\Scripts\Eggs\EggContainer.cs" />
     <Compile Include="Assets\Scripts\Eggs\FragileEgg.cs" />
+    <Compile Include="Assets\Scripts\EndPortal.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

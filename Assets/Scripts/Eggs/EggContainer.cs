@@ -55,6 +55,10 @@ public class EggContainer : MonoBehaviour
         eggs.Remove(other.GetComponent<FragileEgg>());
     }
 
+    public int GetEggCount()
+    {
+        return eggs.Count;
+    }
 
 
 
