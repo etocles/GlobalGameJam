@@ -34,7 +34,10 @@ public class ObjectMover : MonoBehaviour
         {
             posT = (time % (period * 2));
             if (posT > period)
+            {
                 posT = period - (posT % period);
+            }
+            posT /= period;
         }
 
         transform.position = Vector3.Lerp(startPos, endPos, posT);

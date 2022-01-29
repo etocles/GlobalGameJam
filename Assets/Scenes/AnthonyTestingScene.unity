@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPosObject: {fileID: 130638969}
-  period: 1
+  period: 2
   bSin: 0
 --- !u!135 &535553711
 SphereCollider:
