@@ -35,27 +35,15 @@ public class Movement : MonoBehaviour
     [Space]
     public float minDistToSwing;
 
-    private LineRenderer lr;
-
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         bc = GetComponent<BoxCollider>();
-        lr = GetComponent<LineRenderer>();
     }
 
     private void CheckContainerRange()
     {
-        lr.enabled = false;
-        if (eggContainer.holder == this)
-            return;
-
-        if ((eggContainer.transform.position - transform.position).sqrMagnitude < eggPickupRange * eggPickupRange)
-        {
-            lr.enabled = true;
-            lr.SetPositions(new Vector3[] { transform.position, eggContainer.transform.position });
-        }
     }
     
     // Update is called once per frame
@@ -64,7 +52,7 @@ public class Movement : MonoBehaviour
         CheckContainerRange();
         ReadInputs();
 
-        if (Physics.OverlapBox(transform.position - new Vector3(0, .2f, 0), bc.size/2, Quaternion.Euler(0f, 0f, 0f), GroundLayer).Length != 0)
+        if (Physics.OverlapBox(transform.position + bc.center, bc.size, Quaternion.Euler(0f, 0f, 0f), GroundLayer).Length != 0)
         {
             grounded = true;
             // transform.rotation = Quaternion.Euler(0f, 0f, 0f);
@@ -179,7 +167,7 @@ public class Movement : MonoBehaviour
 
         eggContainer.holder = this;
         eggContainer.SetNewPosition(eggHoldPosition);
-        eggContainer.transform.parent = eggHoldPosition;
+        // eggContainer.transform.parent = eggHoldPosition;
 
         eggContainer.AttachToElephant(this);
     }

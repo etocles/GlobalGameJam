@@ -57,19 +57,31 @@ public class EggContainer : MonoBehaviour
     private void Update()
     {
         //PullEggs(1200 * Time.deltaTime);
+        if (holder != null)
+        {
+            GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
+            GetComponent<Rigidbody>().angularVelocity = new Vector3(0, (holder.eggHoldPosition.rotation.eulerAngles.y - transform.rotation.eulerAngles.y) % 180.0f, 0) * 10;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.gameObject.name);
-        other.GetComponent<FragileEgg>().SetContainer(this);
-        eggs.Add(other.GetComponent<FragileEgg>());
+
+        if (other.GetComponent<FragileEgg>() != null)
+        {
+            print(other.gameObject.name);
+            other.GetComponent<FragileEgg>().SetContainer(this);
+            eggs.Add(other.GetComponent<FragileEgg>());
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        other.GetComponent<FragileEgg>().SetContainer(null);
-        eggs.Remove(other.GetComponent<FragileEgg>());
+        if (other.GetComponent<FragileEgg>() != null)
+        {
+            other.GetComponent<FragileEgg>().SetContainer(null);
+            eggs.Remove(other.GetComponent<FragileEgg>());
+        }
     }
 
     public int GetEggCount()
@@ -116,7 +128,7 @@ public class EggContainer : MonoBehaviour
     public void AttachToElephant(Movement elephant)
     {
         holder = elephant;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
     }
 
     public void SetNewPosition(Transform newTransform)
