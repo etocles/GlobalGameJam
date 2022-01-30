@@ -111,7 +111,7 @@ SphereCollider:
   m_GameObject: {fileID: 1325929623944150824}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.006458656
   m_Center: {x: 0, y: 0.002066279, z: 0}
@@ -127,3 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 5352095858360419321, guid: d9383e725bc0572419140e542aa0eaf6, type: 3}
+  clips:
+  - {fileID: 8300000, guid: 2a451555f39e5d4489477087742a7ce3, type: 3}
+  - {fileID: 8300000, guid: 3e179375ea0a3304ab7412fbd593f4d4, type: 3}
+  - {fileID: 8300000, guid: 32abbf72b34607b4f825832bddfe9556, type: 3}
+  - {fileID: 8300000, guid: 37aa591a740abea4394df063ad5e1727, type: 3}
+  - {fileID: 8300000, guid: a1c0d145b7af7ce43bb382bfb095029f, type: 3}
