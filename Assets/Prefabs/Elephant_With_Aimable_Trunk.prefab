@@ -34,6 +34,7 @@ Transform:
   - {fileID: 5395904195054023052}
   - {fileID: 1268071967010583199}
   - {fileID: 7896640324677944025}
+  - {fileID: 1037322996503137102}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,12 +51,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  elephant: {fileID: 0}
+  theRealBall: {fileID: 0}
   elephantTrunkTip: {fileID: 8274383479197332002}
   elephantMinDist: {fileID: 7646049989637294917}
   elephantMaxDist: {fileID: 7646049988138169919}
   wreckingBall: {fileID: 7646049987535111117}
   pseudoTrunk: {fileID: 7646049988325222167}
   timeToSet: 0.6
+  maxOffsetFromRealDist: 10
+  returnToStarting: 0
+  returnSpeed: 10
 --- !u!1 &439604009393094478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1414,37 @@ Transform:
   - {fileID: 1243911355999212519}
   m_Father: {fileID: 8872460028252572136}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8000428692546048914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1037322996503137102}
+  m_Layer: 0
+  m_Name: CamStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1037322996503137102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000428692546048914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2982788, y: 1.2482483, z: -6.0136733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 737922430061459338}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8268896457566355236
 GameObject:

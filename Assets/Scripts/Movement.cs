@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
 
+    public Transform cameraStartPos;
     public BoxCollider bc;
     public float speed = 1f;
     public float speedAir = 1f;
@@ -59,7 +60,15 @@ public class Movement : MonoBehaviour
     private void CheckContainerRange()
     {
     }
-    
+
+    public Vector3 RequestCameraStartOffset()
+    {
+        if (cameraStartPos != null)
+            return transform.position - cameraStartPos.position;
+        else
+            return - new Vector3(-1.29827881f, 1.24824834f, -6.01367331f);
+    }
+
     // Update is called once per frame
     void Update()
     {

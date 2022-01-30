@@ -3280,8 +3280,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3237562490267247536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.9989672, y: 0.22290039, z: -0.5982046}
+  m_LocalScale: {x: 0.119758435, y: 0.119758435, z: 0.119758435}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6931520255232512324}
@@ -3458,6 +3458,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6699910975556297700}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3411595973540271660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457860308861286672}
+  m_Layer: 6
+  m_Name: CameraStartPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457860308861286672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3411595973540271660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2982788, y: 1.2482483, z: -6.0136733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4789558647616558983}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3472588050918539167
 GameObject:
@@ -5252,6 +5283,7 @@ Transform:
   - {fileID: 2728282203908383444}
   - {fileID: 5209062492170999273}
   - {fileID: 5209062491611929167}
+  - {fileID: 457860308861286672}
   m_Father: {fileID: 6931520255232512324}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5276,7 +5308,9 @@ MonoBehaviour:
   wreckingBall: {fileID: 2474296200240030656}
   pseudoTrunk: {fileID: 2474296199974209306}
   timeToSet: 0.6
-  jayTesting: 1
+  maxOffsetFromRealDist: 10
+  returnToStarting: 0
+  returnSpeed: 10
 --- !u!54 &5209062492219564038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5332,6 +5366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f34881e891163344ad2171eed530776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraStartPos: {fileID: 457860308861286672}
   bc: {fileID: 0}
   speed: 1000
   speedAir: 1000
@@ -5353,6 +5388,8 @@ MonoBehaviour:
   eggPickupRange: 100
   minDistToSwing: 0
   turnVelMax: 10
+  slideDropSpeed: 0.91
+  downwardForce: 1
 --- !u!1 &5644003435032911683
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,7 +26,8 @@ public class PlayerCamera : MonoBehaviour
 
     void Start()
     {
-        offset = cameraTarget.transform.position - transform.position;
+        offset = elephant.RequestCameraStartOffset();
+        print("SPILL " + offset);
     }
 
     void LateUpdate()
