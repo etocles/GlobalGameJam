@@ -134,7 +134,7 @@ public class Movement : MonoBehaviour
             triedJump = true;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PauseCanvasScript.isPaused)
         {
             if (eggContainer.holder == this)
                 PutDownContainer();

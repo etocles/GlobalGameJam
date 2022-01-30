@@ -33,7 +33,7 @@ public class PlayerCamera : MonoBehaviour
     void LateUpdate()
     {
 
-        if (!Input.GetMouseButton(2))
+        if (!Input.GetMouseButton(2) && !PauseCanvasScript.isPaused)
         {
             // get the mouse inputs
             float horiLook = Input.GetAxis("Mouse X") * rotateSpeed;

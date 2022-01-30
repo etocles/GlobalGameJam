@@ -41,7 +41,6 @@ public class PauseCanvasScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            print("escaped!");
             isPaused = !isPaused; //toggle pause state
             ELEPHANT.GetComponent<TrunkAimer>().paused = isPaused;
         }
