@@ -5368,14 +5368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 8672410835510788954}
   cameraStartPos: {fileID: 457860308861286672}
-<<<<<<< HEAD
   bc: {fileID: 0}
   speed: 190
   speedAir: 2
-=======
-  speed: 1000
-  speedAir: 1000
->>>>>>> f8dd09bc2ce00b13608c4aae80681fc3052cc9bb
   velocityCap: 10
   GroundLayer:
     serializedVersion: 2
