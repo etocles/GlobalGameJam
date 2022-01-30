@@ -8,9 +8,9 @@ public class EndPortal : MonoBehaviour
     {
         if (other.tag == "Elephant")
         {
-            int eggCount = other.GetComponent<EggContainer>().GetEggCount();
+            int eggCount = other.GetComponent<Movement>().eggContainer.GetEggCount();
             print("YOU GOT TO END WITH : " + eggCount);
-            UIManager.instance.InformOfFinish(eggCount);
+            UIManager.instance?.InformOfFinish(eggCount);
             HandleFinish();
         }
     }
