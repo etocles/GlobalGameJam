@@ -63,7 +63,7 @@ MonoBehaviour:
   eggPopTime: 0.05
   finalWaitTime: 4
   source: {fileID: 7564468145228230313}
-  eggSound: {fileID: 8300000, guid: 2a451555f39e5d4489477087742a7ce3, type: 3}
+  eggSound: {fileID: 8300000, guid: 9467ff049e8ce124bb0a7d75cdb61d87, type: 3}
 --- !u!82 &7564468145228230313
 AudioSource:
   m_ObjectHideFlags: 0

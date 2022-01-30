@@ -11,6 +11,7 @@ public class PlayWhenTipped : MonoBehaviour
     public float soundDistance = 8.0f;
     private AudioSource source;
     private bool fallen = false;
+    private bool played_once = false;
 
     void Awake()
     {
@@ -25,9 +26,10 @@ public class PlayWhenTipped : MonoBehaviour
 
     void Update()
     {
-        if (!fallen && transform.up.y < 0.8f && !source.isPlaying) //1.0f is straight up, 0.0f is laying down
+        if (!played_once && !fallen && transform.up.y < 0.8f && !source.isPlaying) //1.0f is straight up, 0.0f is laying down
         {
             source.Play();
+            played_once = true;
         }
     }
 

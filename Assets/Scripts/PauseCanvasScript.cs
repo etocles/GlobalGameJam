@@ -9,6 +9,7 @@ using TMPro;
 public class PauseCanvasScript : MonoBehaviour
 {
     public AudioMixer mixer;
+    public AudioSource _BGM;
     [Space]
     public Slider master_scroll;
     public Slider music_scroll;
@@ -45,6 +46,12 @@ public class PauseCanvasScript : MonoBehaviour
             ELEPHANT.GetComponent<TrunkAimer>().paused = isPaused;
         }
         Time.timeScale = (isPaused) ? 0.0f : 1.0f;
+        try
+        {
+            if (isPaused) _BGM.Pause();
+            else if (!_BGM.isPlaying) _BGM.Play();
+        }
+        finally { }
         PausePanel.SetActive(isPaused);
         if (!isPaused) return;
         Cursor.lockState = CursorLockMode.None;

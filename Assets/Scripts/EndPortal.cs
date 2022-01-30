@@ -33,6 +33,7 @@ public class EndPortal : MonoBehaviour
             UIManager.instance?.SetEggCount(++eggCount);
             egg.gameObject.SetActive(false);
             source.PlayOneShot(eggSound);
+            source.pitch += 0.03f;
             yield return new WaitForSeconds(eggPopTime);
             other.GetComponent<Rigidbody>().velocity *= 0.95f;
         }

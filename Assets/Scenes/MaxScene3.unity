@@ -2016,6 +2016,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160776647768687968, guid: 5efd561af4d1a8d4488fd4f98c9a6762, type: 3}
+      propertyPath: _BGM
+      value: 
+      objectReference: {fileID: 652348878}
+    - target: {fileID: 160776647768687968, guid: 5efd561af4d1a8d4488fd4f98c9a6762, type: 3}
       propertyPath: ELEPHANT
       value: 
       objectReference: {fileID: 288827281}

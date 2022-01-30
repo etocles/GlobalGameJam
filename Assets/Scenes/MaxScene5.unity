@@ -2265,6 +2265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7564468145228230313, guid: 2dc0f633480278f4d999d99203f5f93f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7564468145228230317, guid: 2dc0f633480278f4d999d99203f5f93f, type: 3}
       propertyPath: m_Name
       value: EndGoalMarker
@@ -5678,6 +5682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+--- !u!1 &467715782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5277161695132093757, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+  m_PrefabInstance: {fileID: 467715781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &474843336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18922,9 +18931,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160776647768687968, guid: 5efd561af4d1a8d4488fd4f98c9a6762, type: 3}
+      propertyPath: _BGM
+      value: 
+      objectReference: {fileID: 1303734696}
+    - target: {fileID: 160776647768687968, guid: 5efd561af4d1a8d4488fd4f98c9a6762, type: 3}
       propertyPath: ELEPHANT
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 467715782}
     - target: {fileID: 160776647768687969, guid: 5efd561af4d1a8d4488fd4f98c9a6762, type: 3}
       propertyPath: m_Pivot.x
       value: 0
