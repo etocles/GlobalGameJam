@@ -18,7 +18,6 @@ public class UIManager : MonoBehaviour
     public void SetEggCount(int eggCount)
     {
         gameObject.SetActive(true);
-        string S = 
-        eggText.text = "YOU DID IT, YOU BEAUTIFUL OAF!\nYOU GOT: " + eggCount + " EGG" + (eggCount == 1 ? "" : "s") + " TO THE END!";
+        eggText.text = "YOU DID IT, YOU BEAUTIFUL OAF!\nYOU GOT: " + eggCount + " EGG" + (eggCount == 1 ? "" : "S") + " TO THE END!";
     }
 }
