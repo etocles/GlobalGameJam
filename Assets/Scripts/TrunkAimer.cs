@@ -26,6 +26,8 @@ public class TrunkAimer : MonoBehaviour
     private Vector3 initialRelativePos;
     public float returnSpeed = 10;
 
+    public bool paused = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +43,7 @@ public class TrunkAimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        if (!paused) Cursor.lockState = CursorLockMode.Locked;
 
         if (Input.GetMouseButtonDown(2))
             fakeScreenPos = cam.WorldToScreenPoint(wreckingBall.position);
