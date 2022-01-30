@@ -74,7 +74,9 @@ public class PauseCanvasScript : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("TitleScene");
+        isPaused = false;
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("TitleScene"); 
     }
 
     private float Convert(float val)
