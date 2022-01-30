@@ -11,13 +11,13 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        mainPanel.SetActive(false);
+        gameObject.SetActive(false);
         instance = this;
     }
 
     public void SetEggCount(int eggCount)
     {
-        mainPanel.SetActive(true);
+        gameObject.SetActive(true);
         eggText.text = "YOU DID IT, YOU BEAUTIFUL OAF!\nYOU GOT: " + eggCount + " EGGS TO THE END!";
     }
 }
