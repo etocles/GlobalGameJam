@@ -20,8 +20,11 @@ public class TrunkAimer : MonoBehaviour
     private Transform lastObjectHit;
     private float timeRemaining;
     public float timeToSet = 0.6f;
+    public float maxOffsetFromRealDist = 10;
 
-    public bool jayTesting = true;
+    public bool returnToStarting = false;
+    private Vector3 initialRelativePos;
+    public float returnSpeed = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,8 @@ public class TrunkAimer : MonoBehaviour
         cam = Camera.main;
         fakeScreenPos.x = Screen.width / 2;
         fakeScreenPos.y = Screen.height / 2;
+
+        initialRelativePos = elephantTrunkTip.localPosition;
     }
 
     private Vector3 fakeScreenPos;
@@ -71,8 +76,15 @@ public class TrunkAimer : MonoBehaviour
 
             // move the trunk of the elephant to that position.
             elephantTrunkTip.position = point;
+        } else if (returnToStarting)
+        {
+            elephantTrunkTip.localPosition = Vector3.Lerp(elephantTrunkTip.localPosition, initialRelativePos, returnSpeed * Time.deltaTime);
         }
 
+        if ((theRealBall.transform.position - wreckingBall.transform.position).magnitude < maxOffsetFromRealDist)
+        {
+            theRealBall.position = wreckingBall.position;
+        }
         Vector3 runDir = (wreckingBall.position - theRealBall.position);
         if (runDir.sqrMagnitude < 1)
             runDir.Normalize();

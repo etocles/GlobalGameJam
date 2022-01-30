@@ -38,6 +38,7 @@ public class Movement : MonoBehaviour
     public float turnVelMax = 10;
     [Range(0, 1)]
     public float slideDropSpeed = 0.91f;
+    public float downwardForce = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,8 @@ public class Movement : MonoBehaviour
     {
         CheckContainerRange();
         ReadInputs();
+
+        rb.velocity -= Vector3.up * downwardForce * Time.deltaTime;
 
         Debug.DrawLine(transform.position + bc.center, transform.position, Color.red, 20);
         if (Physics.Linecast(transform.position, transform.position + bc.center, GroundLayer))
