@@ -36,6 +36,8 @@ public class Movement : MonoBehaviour
     public float minDistToSwing;
     [Space]
     public float turnVelMax = 10;
+    [Range(0, 1)]
+    public float slideDropSpeed = 0.91f;
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +85,7 @@ public class Movement : MonoBehaviour
                 Vector3 newvel = rb.velocity;
                 newvel.y = jumpForce;
                 rb.velocity = newvel;
-            } else if (swinger == null)
+            } /*else if (swinger == null)
             {
                 swinger = GetClosestSwingPoint();
                 swinger?.Swing(this);
@@ -91,7 +93,7 @@ public class Movement : MonoBehaviour
             {
                 swinger.StopSwing(this);
                 swinger = null;
-            }
+            }*/
         }
         
     }
@@ -143,7 +145,7 @@ public class Movement : MonoBehaviour
         if (movementVector.sqrMagnitude > 0.01)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(movementVector.x, 0, movementVector.z).normalized, Vector3.up), 20f * Time.deltaTime);
         else if (grounded)
-            rb.velocity = rb.velocity * 0.8f;
+            rb.velocity = (new Vector3(rb.velocity.x, 0, rb.velocity.z) * slideDropSpeed) + (Vector3.up * rb.velocity.y);
 
         if (rb.velocity.sqrMagnitude < turnVelMax && Vector3.Dot(rb.velocity, movementVector.normalized) < 0)
         {

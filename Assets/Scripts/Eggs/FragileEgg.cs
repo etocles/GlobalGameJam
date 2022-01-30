@@ -10,6 +10,7 @@ public class FragileEgg : MonoBehaviour
     private float soundDistance = 8.0f;
     private AudioSource source;
     private bool is_breakable = false;
+    private EggContainer container = null;
 
     void Awake()
     {
@@ -35,6 +36,8 @@ public class FragileEgg : MonoBehaviour
         // if soft, don't crack
         //if (collision.relativeVelocity.magnitude < 2.0) return;
         if (collision.impulse.magnitude < 0.1) return;
+        if (container != null && collision.impulse.magnitude < 0.2) return;
+        if (collision.gameObject.layer == 7 || collision.gameObject.layer == 8) return; // Container layer and egg layer
 
         // select a clip to play from the list
         source.clip = clips[UnityEngine.Random.Range(0, clips.Length - 1)];
@@ -49,7 +52,8 @@ public class FragileEgg : MonoBehaviour
         // create the two shells
         Instantiate(broken_egg, transform);
         // disable own mesh and colliders
-        GetComponent<SphereCollider>().enabled = false;
+        // GetComponent<SphereCollider>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
 
         //Destroy(GetComponent<Rigidbody>());
         // invoke Destroy after like 10 seconds
@@ -58,6 +62,6 @@ public class FragileEgg : MonoBehaviour
 
     public void SetContainer(EggContainer ec)
     {
-        // TODO
+        container = ec;
     }
 }

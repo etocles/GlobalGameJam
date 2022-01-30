@@ -57,6 +57,11 @@ public class EggContainer : MonoBehaviour
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
             GetComponent<Rigidbody>().velocity += Vector3.up * holder.GetComponent<Rigidbody>().velocity.y;
+
+            foreach (FragileEgg e in eggs)
+            {
+                e.GetComponent<Rigidbody>().velocity = Vector3.Lerp(e.GetComponent<Rigidbody>().velocity, GetComponent<Rigidbody>().velocity, 0.15f);
+            }
         }
     }
 
@@ -67,7 +72,7 @@ public class EggContainer : MonoBehaviour
         if (holder != null)
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
-            transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
+            // transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
             //GetComponent<Rigidbody>().velocity += Vector3.up * holder.GetComponent<Rigidbody>().velocity;
         }
     }
