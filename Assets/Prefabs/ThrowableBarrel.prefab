@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5775924150229376982}
   - component: {fileID: 4966693259376556789}
   - component: {fileID: 8677733680541748026}
+  - component: {fileID: 8796769665592151171}
   m_Layer: 0
   m_Name: ThrowableBarrel
   m_TagString: Untagged
@@ -130,3 +131,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 3
+--- !u!114 &8796769665592151171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559078132222780690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+  clips:
+  - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
+  - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
+  - {fileID: 8300000, guid: 552ae226bab22da4e8d52047a4457f9f, type: 3}
+  - {fileID: 8300000, guid: 92362333fa4302d48b1b66fd146bfcd2, type: 3}
+  - {fileID: 8300000, guid: 26753783dd1e9434f80a7bb1d9d506dc, type: 3}
+  - {fileID: 8300000, guid: 8185f9ed32d2cd246a8b4091de290036, type: 3}
+  - {fileID: 8300000, guid: f96c10d00e7162a428f1bbd51fd10fdb, type: 3}
+  - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
+  - {fileID: 8300000, guid: 49898ad9fa13f9b478a98e44af572866, type: 3}
+  - {fileID: 8300000, guid: 355cf8d58078d924f9162c936d68b62f, type: 3}
+  soundDistance: 8
