@@ -24,6 +24,7 @@ public class EndPortal : MonoBehaviour
 
     IEnumerator IHandleFinish(EggContainer container, Collider other)
     {
+        Cursor.lockState = CursorLockMode.None;
         int eggCount = 0;
         var eggs = container.GetEggs();
         foreach (FragileEgg egg in eggs)
