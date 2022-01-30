@@ -12,6 +12,7 @@ public class TitleManager : MonoBehaviour
 
     public TMP_Text[] highScores;
     [Space]
+    public Texture easter_egg;
     public float floatTime = 0.3f;
     [Space]
     private GameObject _focused_panel;
@@ -37,12 +38,18 @@ public class TitleManager : MonoBehaviour
 
     private void Start()
     {
+        int total = 0;
         for (int i = 0; i < highScores.Length; ++i)
         {
+            total += PlayerPrefs.GetInt("MaxScene" + (i + 2));
             if (PlayerPrefs.HasKey("MaxScene" + (i + 2)))
                 highScores[i].text = "Egg Score: " + PlayerPrefs.GetInt("MaxScene" + (i + 2));
             else
                 highScores[i].text = "No Egg Score";
+        }
+        if (total == 54 * 4) //easter_egg :)
+        {
+            dummy.transform.parent.GetChild(0).gameObject.GetComponent<RawImage>().texture = easter_egg;
         }
         mixer.SetFloat("masterVol", Convert(master_scroll.value));
         mixer.SetFloat("musicVol", Convert(music_scroll.value));
