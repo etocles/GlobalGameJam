@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eggPullPosition: {fileID: 864754590680544146}
-  eggPullForce: 800
-  eggVelocityLerpAmount: 0.2
+  eggPullForce: 700
+  eggVelocityLerpAmount: 0.1
   eggLossAngle: 50
   eggLossPosition: {fileID: 864754590069253740}
   eggLossRadius: 0
