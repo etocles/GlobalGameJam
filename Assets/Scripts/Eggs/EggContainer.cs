@@ -20,10 +20,21 @@ public class EggContainer : MonoBehaviour
     private HashSet<FragileEgg> eggs = new HashSet<FragileEgg>();
 
     public Movement holder;
+    private bool bFrozen = false;
 
     private void Start()
     {
         
+    }
+
+    public HashSet<FragileEgg> GetEggs()
+    {
+        return new HashSet<FragileEgg>(eggs);
+    }
+
+    public void FreezeEggs()
+    {
+        bFrozen = true;
     }
 
     public void LoseEggsWithTeleport(int numEggs)
@@ -89,6 +100,8 @@ public class EggContainer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (bFrozen) return;
+
         if (other.GetComponent<FragileEgg>() != null)
         {
             print(other.gameObject.name);
@@ -99,6 +112,8 @@ public class EggContainer : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (bFrozen) return;
+
         if (other.GetComponent<FragileEgg>() != null)
         {
             other.GetComponent<FragileEgg>().SetContainer(null);
