@@ -25,7 +25,9 @@ public class PlayAtRandomInterval : MonoBehaviour
 
     void PlaySound()
     {
-        source.clip = clips[Random.Range(0, clips.Length - 1)]; 
+        if (clips.Length == 0) return;
+
+        source.clip = clips[Random.Range(0, clips.Length)]; 
         source.Play();
         Invoke("PlaySound", Random.Range(minInterval, maxInterval));
     }

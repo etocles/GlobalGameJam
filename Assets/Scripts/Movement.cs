@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     public float speedAir = 1f;
 
     public float velocityCap;
-
+    
     public LayerMask GroundLayer;
 
     public bool grounded;
@@ -73,10 +73,10 @@ public class Movement : MonoBehaviour
         CheckContainerRange();
         ReadInputs();
 
-        rb.velocity -= Vector3.up * downwardForce * Time.deltaTime;
+        rb.velocity -= (Vector3.up * downwardForce * Time.deltaTime);
+        print("VEL: " + rb.velocity);
 
-        Debug.DrawLine(transform.position + bc.center, transform.position, Color.red, 20);
-        if (Physics.Linecast(transform.position, transform.position + bc.center, GroundLayer))
+        if (Physics.CheckBox(bc.bounds.center, bc.bounds.extents, transform.rotation, GroundLayer))
         {
             grounded = true;
             // transform.rotation = Quaternion.Euler(0f, 0f, 0f);
@@ -149,7 +149,7 @@ public class Movement : MonoBehaviour
 
     public void AddVelocity()
     {
-        
+        return;
         movementVector = movementVector.normalized * (grounded ? speed : speedAir);
 
         if (movementVector.sqrMagnitude > 0.01)
@@ -157,9 +157,9 @@ public class Movement : MonoBehaviour
         else if (grounded)
             rb.velocity = (new Vector3(rb.velocity.x, 0, rb.velocity.z) * slideDropSpeed) + (Vector3.up * rb.velocity.y);
 
-        if (rb.velocity.sqrMagnitude < turnVelMax && Vector3.Dot(rb.velocity, movementVector.normalized) < 0)
+        if (movementVector.sqrMagnitude > 0.01 && rb.velocity.sqrMagnitude < turnVelMax && Vector3.Dot(rb.velocity, movementVector.normalized) < 0)
         {
-            rb.velocity = Vector3.zero;
+            rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
 
         if ((movementVector.z > 0 && rb.velocity.z > velocityCap) || (movementVector.z < 0 && rb.velocity.z < -velocityCap))
