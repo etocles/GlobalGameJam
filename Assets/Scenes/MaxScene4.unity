@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -382,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -418,6 +420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &78233417
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -744,6 +748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &125184146
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -820,6 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 92362333fa4302d48b1b66fd146bfcd2, type: 3}
   - {fileID: 8300000, guid: 26753783dd1e9434f80a7bb1d9d506dc, type: 3}
@@ -920,6 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &143081007
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -982,6 +991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &145956519
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1123,6 +1134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 49898ad9fa13f9b478a98e44af572866, type: 3}
   - {fileID: 8300000, guid: 355cf8d58078d924f9162c936d68b62f, type: 3}
@@ -1254,6 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -1351,6 +1364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &180885463
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1413,6 +1428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &191507078
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1692,6 +1709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -1763,6 +1781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &257418903
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1951,6 +1971,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &266951187
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2107,6 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -2237,6 +2260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -2512,6 +2536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 92362333fa4302d48b1b66fd146bfcd2, type: 3}
   - {fileID: 8300000, guid: 26753783dd1e9434f80a7bb1d9d506dc, type: 3}
@@ -2612,6 +2637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &370279561
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2837,6 +2864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -2936,6 +2964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &393022973
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3012,6 +3042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 49898ad9fa13f9b478a98e44af572866, type: 3}
   - {fileID: 8300000, guid: 355cf8d58078d924f9162c936d68b62f, type: 3}
@@ -3049,6 +3080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &400296302
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3268,6 +3301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &413204248
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3344,6 +3379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 49898ad9fa13f9b478a98e44af572866, type: 3}
   - {fileID: 8300000, guid: 355cf8d58078d924f9162c936d68b62f, type: 3}
@@ -3477,6 +3513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &527327118
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3633,6 +3671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -3732,6 +3771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &560560907
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3888,6 +3929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -4020,6 +4062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -4316,6 +4359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -4446,6 +4490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -4687,6 +4732,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &729667850
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4749,6 +4796,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &735982514
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4970,6 +5019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -5100,6 +5150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -5136,6 +5187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &762400592
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5263,6 +5316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &764637148
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5484,6 +5539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -5583,6 +5639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &795791917
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5801,6 +5859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -5931,6 +5990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -6018,6 +6078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -6148,6 +6209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -6280,6 +6342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -6412,6 +6475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -6462,6 +6526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -6661,6 +6726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -6758,6 +6824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &929371526
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6914,6 +6982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -7013,6 +7082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &975006247
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7136,6 +7207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &979913468
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7292,6 +7365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -7422,6 +7496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -7552,6 +7627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -7684,6 +7760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -7882,6 +7959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1019135133
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8177,6 +8256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1031333723
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8333,6 +8414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -8432,6 +8514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1051620258
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8494,6 +8578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1099633694
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8715,6 +8801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -8767,6 +8854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -8803,6 +8891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1123087900
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9084,6 +9174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1147394660
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9225,6 +9317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -9261,6 +9354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1158115834
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9576,6 +9671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -9957,6 +10053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1239390161
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10178,6 +10276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -10214,6 +10313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1242344929
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10435,6 +10536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -10473,6 +10575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1295413569
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10694,6 +10798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -10957,6 +11062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -11044,6 +11150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 49898ad9fa13f9b478a98e44af572866, type: 3}
   - {fileID: 8300000, guid: 355cf8d58078d924f9162c936d68b62f, type: 3}
@@ -11095,6 +11202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -11225,6 +11333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -11263,6 +11372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1357725982
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11484,6 +11595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -11583,6 +11695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1376910560
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11645,6 +11759,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1381448511
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11833,6 +11949,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1398950415
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11989,6 +12107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -12121,6 +12240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -12251,6 +12371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -12381,6 +12502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1462330807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12504,6 +12627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1466099015
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12660,6 +12785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -12712,6 +12838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 49898ad9fa13f9b478a98e44af572866, type: 3}
   - {fileID: 8300000, guid: 355cf8d58078d924f9162c936d68b62f, type: 3}
@@ -12810,6 +12937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1473399221
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12966,6 +13095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -13098,6 +13228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -13230,6 +13361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -13572,6 +13704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 92362333fa4302d48b1b66fd146bfcd2, type: 3}
   - {fileID: 8300000, guid: 26753783dd1e9434f80a7bb1d9d506dc, type: 3}
@@ -13705,6 +13838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -13804,6 +13938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1640039519
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13960,6 +14096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -14092,6 +14229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -14199,6 +14337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1713842270
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14517,6 +14657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8
@@ -14716,6 +14857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -14754,6 +14896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1747832962
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14975,6 +15119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -15128,6 +15273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -15235,6 +15381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1806626975
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15423,6 +15571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1811239404
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15485,6 +15635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1855836131
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15673,6 +15825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1859436261
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15829,6 +15983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -15961,6 +16116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -16080,6 +16236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1892939642
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16503,6 +16661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -16602,6 +16761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1925141767
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16698,6 +16859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1949637878
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16919,6 +17082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -17018,6 +17182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &1966458456
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17174,6 +17340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -17212,6 +17379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &2010142853
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17339,6 +17508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &2053085511
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17668,6 +17839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 92362333fa4302d48b1b66fd146bfcd2, type: 3}
   - {fileID: 8300000, guid: 26753783dd1e9434f80a7bb1d9d506dc, type: 3}
@@ -17768,6 +17940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53b2d335530b444bad9a712ea376c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  broken_egg: {fileID: 0}
+  clips: []
 --- !u!135 &2089650017
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17924,6 +18098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: fa24302c6a994694da91d7b15a2c2a8e, type: 3}
   - {fileID: 8300000, guid: 0802a78d6fb16d145a3d2351ec97783e, type: 3}
@@ -18125,6 +18300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c83f0000274c9242bcb70035d1fc1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mixerGroup: {fileID: -16531001162157335, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
   clips:
   - {fileID: 8300000, guid: 0f068e0caace985498919677a8bd07a9, type: 3}
   soundDistance: 8

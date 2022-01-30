@@ -9,6 +9,7 @@ public class FragileEgg : MonoBehaviour
     public AudioClip[] clips;
     private float soundDistance = 8.0f;
     private AudioSource source;
+    private bool is_breakable = false;
 
     void Awake()
     {
@@ -16,13 +17,24 @@ public class FragileEgg : MonoBehaviour
         source.playOnAwake = false;
         source.spatialBlend = 1.0f;
         source.maxDistance = soundDistance;
+        Invoke("enable_breaking", 1f);
+    }
+
+    private void enable_breaking()
+    {
+        is_breakable = true;
     }
 
     // when colliding, if velocity is big enough, play crack sound, and shatter
     void OnCollisionEnter(Collision collision)
     {
+        // if in spawn grace period, not breakable
+        if (!is_breakable) return;
+        // if another egg, don't crack against it
+        if (collision.gameObject.layer == 8) return;
         // if soft, don't crack
-        if (collision.impulse.magnitude < 4) return;
+        //if (collision.relativeVelocity.magnitude < 2.0) return;
+        if (collision.impulse.magnitude < 0.1) return;
 
         // select a clip to play from the list
         source.clip = clips[UnityEngine.Random.Range(0, clips.Length - 1)];
@@ -37,10 +49,11 @@ public class FragileEgg : MonoBehaviour
         // create the two shells
         Instantiate(broken_egg, transform);
         // disable own mesh and colliders
-        Destroy(GetComponent<SphereCollider>());
-        Destroy(GetComponent<Rigidbody>());
+        GetComponent<SphereCollider>().enabled = false;
+
+        //Destroy(GetComponent<Rigidbody>());
         // invoke Destroy after like 10 seconds
-        Destroy(gameObject, 10f);
+        //Destroy(gameObject, 10f);
     }
 
     public void SetContainer(EggContainer ec)
