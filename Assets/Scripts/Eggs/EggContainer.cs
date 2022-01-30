@@ -65,7 +65,7 @@ public class EggContainer : MonoBehaviour
     private void FixedUpdate()
     {
 
-        PullEggs(1200 * Time.fixedDeltaTime);
+        PullEggs(eggPullForce * Time.fixedDeltaTime);
         if (holder != null)
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
