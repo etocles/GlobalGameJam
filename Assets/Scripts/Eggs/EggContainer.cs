@@ -6,7 +6,9 @@ using UnityEngine;
 public class EggContainer : MonoBehaviour
 {
     public Transform eggPullPosition;
+    [Header("EGG RETENTION PARAMS")]
     public float eggPullForce;
+    public float eggVelocityLerpAmount = 0.12f;
     [Space]
     public float eggLossAngle = 50.0f;
     public Transform eggLossPosition;
@@ -71,7 +73,7 @@ public class EggContainer : MonoBehaviour
 
             foreach (FragileEgg e in eggs)
             {
-                e.GetComponent<Rigidbody>().velocity = Vector3.Lerp(e.GetComponent<Rigidbody>().velocity, GetComponent<Rigidbody>().velocity, 0.15f);
+                e.GetComponent<Rigidbody>().velocity = Vector3.Lerp(e.GetComponent<Rigidbody>().velocity, GetComponent<Rigidbody>().velocity, eggVelocityLerpAmount);
             }
         }
     }
