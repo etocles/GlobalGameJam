@@ -53,7 +53,7 @@ public class Movement : MonoBehaviour
         ReadInputs();
 
         Debug.DrawLine(transform.position + bc.center, transform.position, Color.red, 20);
-        if (Physics.OverlapBox(transform.position + bc.center, bc.size, Quaternion.Euler(0f, 0f, 0f), GroundLayer).Length != 0)
+        if (Physics.Linecast(transform.position, transform.position + bc.center, GroundLayer))
         {
             grounded = true;
             // transform.rotation = Quaternion.Euler(0f, 0f, 0f);
