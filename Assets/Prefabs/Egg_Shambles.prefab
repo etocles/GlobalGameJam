@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2047357765649885010}
   - component: {fileID: 4375084660121139794}
   - component: {fileID: 4375084660121139793}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: egg_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5352095858360419322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Egg_Shambles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 136320505587127475}
   - component: {fileID: 136320505587127485}
   - component: {fileID: 136320505587127484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: egg_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

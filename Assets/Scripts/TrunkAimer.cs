@@ -71,12 +71,13 @@ public class TrunkAimer : MonoBehaviour
 
             // move the trunk of the elephant to that position.
             elephantTrunkTip.position = point;
-
-            Vector3 runDir = (wreckingBall.position - theRealBall.position);
-            if (runDir.sqrMagnitude < 1)
-                runDir.Normalize();
-            theRealBall.GetComponent<Rigidbody>().velocity = runDir * 30;
         }
+
+        Vector3 runDir = (wreckingBall.position - theRealBall.position);
+        if (runDir.sqrMagnitude < 1)
+            runDir.Normalize();
+        theRealBall.GetComponent<Rigidbody>().velocity = runDir * 30;
+
 
         pseudoTrunk.SetPosition(0, pseudoTrunk.transform.position);
         pseudoTrunk.SetPosition(1, wreckingBall.transform.parent.position);

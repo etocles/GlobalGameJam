@@ -34,6 +34,8 @@ public class Movement : MonoBehaviour
     public float eggPickupRange;
     [Space]
     public float minDistToSwing;
+    [Space]
+    public float turnVelMax = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -140,6 +142,13 @@ public class Movement : MonoBehaviour
 
         if (movementVector.sqrMagnitude > 0.01)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(movementVector.x, 0, movementVector.z).normalized, Vector3.up), 20f * Time.deltaTime);
+        else if (grounded)
+            rb.velocity = rb.velocity * 0.8f;
+
+        if (rb.velocity.sqrMagnitude < turnVelMax && Vector3.Dot(rb.velocity, movementVector.normalized) < 0)
+        {
+            rb.velocity = Vector3.zero;
+        }
 
         if ((movementVector.z > 0 && rb.velocity.z > velocityCap) || (movementVector.z < 0 && rb.velocity.z < -velocityCap))
         {
