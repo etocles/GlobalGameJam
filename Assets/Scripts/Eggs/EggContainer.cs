@@ -56,6 +56,7 @@ public class EggContainer : MonoBehaviour
         if (holder != null)
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
+            GetComponent<Rigidbody>().velocity += Vector3.up * holder.GetComponent<Rigidbody>().velocity.y;
         }
     }
 
@@ -66,6 +67,8 @@ public class EggContainer : MonoBehaviour
         if (holder != null)
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
+            transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
+            //GetComponent<Rigidbody>().velocity += Vector3.up * holder.GetComponent<Rigidbody>().velocity;
         }
     }
 
@@ -75,6 +78,7 @@ public class EggContainer : MonoBehaviour
         if (holder != null)
         {
             GetComponent<Rigidbody>().velocity = (holder.eggHoldPosition.position - transform.position) * 20;
+            //transform.position = new Vector3(transform.position.x, holder.eggHoldPosition.position.y, transform.position.z);
         }
     }
 
@@ -141,7 +145,7 @@ public class EggContainer : MonoBehaviour
     public void AttachToElephant(Movement elephant)
     {
         holder = elephant;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ| RigidbodyConstraints.FreezePositionY;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
     public void SetNewPosition(Transform newTransform)
