@@ -6,9 +6,10 @@ public class EndPortal : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "EggContainer")
+        if (other.tag == "Elephant")
         {
             int eggCount = other.GetComponent<EggContainer>().GetEggCount();
+            print("YOU GOT TO END WITH : " + eggCount);
             UIManager.instance.InformOfFinish(eggCount);
             HandleFinish();
         }

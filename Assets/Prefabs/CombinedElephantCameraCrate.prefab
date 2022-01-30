@@ -5259,7 +5259,7 @@ GameObject:
   - component: {fileID: 5209062492219564035}
   m_Layer: 6
   m_Name: Elephant_With_Aimable_Trunk
-  m_TagString: Untagged
+  m_TagString: Elephant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5339,7 +5339,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 2.3002956
-  m_Height: 5.324605
+  m_Height: 6.2
   m_Direction: 2
   m_Center: {x: 0, y: -0.7602956, z: 0.7023024}
 --- !u!65 &5209062492219564033
@@ -5353,8 +5353,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.49153805, z: 1}
-  m_Center: {x: 0, y: -2.9818673, z: 0}
+  m_Size: {x: 3.6097212, y: 0.49153805, z: 4.615653}
+  m_Center: {x: -0.6992147, y: -2.9818673, z: 0.09001255}
 --- !u!114 &5209062492219564035
 MonoBehaviour:
   m_ObjectHideFlags: 0
