@@ -18310,17 +18310,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1709381039}
     - target: {fileID: 2917200396637899339, guid: f020fa037e67a7f4da6226b957fbca6e, type: 3}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2917200396637899339, guid: f020fa037e67a7f4da6226b957fbca6e, type: 3}
       propertyPath: eggContainer
       value: 
       objectReference: {fileID: 1131603493}
-    - target: {fileID: 2917200396637899339, guid: f020fa037e67a7f4da6226b957fbca6e, type: 3}
-      propertyPath: GroundLayer.m_Bits
-      value: 823
-      objectReference: {fileID: 0}
     - target: {fileID: 2958172712839702386, guid: f020fa037e67a7f4da6226b957fbca6e, type: 3}
       propertyPath: cam
       value: 
