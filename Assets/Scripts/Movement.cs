@@ -45,6 +45,15 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         bc = GetComponent<BoxCollider>();
+
+        Invoke("PickupCrate", 0.0001f);
+    }
+
+    private void PickupCrate()
+    {
+        eggContainer.holder = this;
+        eggContainer.SetNewPosition(eggHoldPosition);
+        eggContainer.AttachToElephant(this);
     }
 
     private void CheckContainerRange()
