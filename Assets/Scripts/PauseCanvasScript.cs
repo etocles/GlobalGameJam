@@ -24,18 +24,14 @@ public class PauseCanvasScript : MonoBehaviour
     public GameObject ELEPHANT;
     public GameObject PausePanel;
 
-    private bool isPaused = false;
+    public static bool isPaused = false;
 
-    void Awake()
+    void Start()
     {
         mixer.SetFloat("masterVol", Convert(master_scroll.value));
         mixer.SetFloat("musicVol", Convert(music_scroll.value));
         mixer.SetFloat("collisionVol", Convert(coll_scroll.value));
         mixer.SetFloat("SFXVol", Convert(sfx_scroll.value));
-    }
-
-    void Start()
-    {
         PausePanel.SetActive(isPaused);
     }
 
