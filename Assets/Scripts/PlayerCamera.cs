@@ -31,13 +31,17 @@ public class PlayerCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        // get the mouse inputs
-        float horiLook = Input.GetAxis("Mouse X") * rotateSpeed;
-        vertLook = Mathf.Clamp(vertLook + Input.GetAxis("Mouse Y") * rotateSpeed, minVertAngle, maxVertAngle);
-        currentZoom = Mathf.Clamp(currentZoom - Input.mouseScrollDelta.y * Time.deltaTime * zoomSpeed, zoomMin, zoomMax);
 
-        // rotate the camera
-        transform.eulerAngles = new Vector3(-vertLook, transform.eulerAngles.y + horiLook, 0);
+        if (!Input.GetMouseButton(2))
+        {
+            // get the mouse inputs
+            float horiLook = Input.GetAxis("Mouse X") * rotateSpeed;
+            vertLook = Mathf.Clamp(vertLook + Input.GetAxis("Mouse Y") * rotateSpeed, minVertAngle, maxVertAngle);
+            currentZoom = Mathf.Clamp(currentZoom - Input.mouseScrollDelta.y * Time.deltaTime * zoomSpeed, zoomMin, zoomMax);
+
+            // rotate the camera
+            transform.eulerAngles = new Vector3(-vertLook, transform.eulerAngles.y + horiLook, 0);
+        }
 
         transform.position = Vector3.Lerp(transform.position, cameraTarget.transform.position - (transform.rotation * offset * currentZoom), speedOfFollow);
 
