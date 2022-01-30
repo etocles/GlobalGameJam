@@ -6,8 +6,9 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
 
+    public Animator anim;
     public Transform cameraStartPos;
-    public BoxCollider bc;
+    private BoxCollider bc;
     public float speed = 1f;
     public float speedAir = 1f;
 
@@ -16,11 +17,10 @@ public class Movement : MonoBehaviour
     public LayerMask GroundLayer;
 
     public bool grounded;
-    public SwingPoint swinger;
 
-    public bool triedJump;
+    private bool triedJump;
     public float jumpForce = 3;
-    public Vector3 movementVector;
+    private Vector3 movementVector;
 
     public PlayerCamera pCam;
     public float rotSpeed;
@@ -33,8 +33,6 @@ public class Movement : MonoBehaviour
     public Transform eggDropPosition;
 
     public float eggPickupRange;
-    [Space]
-    public float minDistToSwing;
     [Space]
     public float turnVelMax = 10;
     [Range(0, 1)]
@@ -121,24 +119,15 @@ public class Movement : MonoBehaviour
 
     private SwingPoint GetClosestSwingPoint()
     {
-        SwingPoint[] points = FindObjectsOfType<SwingPoint>();
-        SwingPoint best = null;
-        float min = minDistToSwing * minDistToSwing;
-        foreach (SwingPoint sp in points)
-        {
-            if ((sp.transform.position - transform.position).sqrMagnitude < min)
-            {
-                min = (sp.transform.position - transform.position).sqrMagnitude;
-                best = sp;
-            }
-        }
-        return best;
+        return null;
     }
 
     public void ReadInputs()
     {
         movementVector += Input.GetAxisRaw("Horizontal") * pCam.GetRight();
         movementVector += Input.GetAxisRaw("Vertical") * pCam.GetForward();
+
+        anim.SetBool("IsWalking", movementVector.sqrMagnitude > 0.1);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
