@@ -149,7 +149,6 @@ public class Movement : MonoBehaviour
 
     public void AddVelocity()
     {
-        return;
         movementVector = movementVector.normalized * (grounded ? speed : speedAir);
 
         if (movementVector.sqrMagnitude > 0.01)

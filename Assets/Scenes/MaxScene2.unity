@@ -17689,14 +17689,6 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 5209062492219564035, guid: c74ecd3e100996a479df601ba1886105, type: 3}
-      propertyPath: downwardForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5209062492219564038, guid: c74ecd3e100996a479df601ba1886105, type: 3}
-      propertyPath: m_Drag
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 6931520255232512324, guid: c74ecd3e100996a479df601ba1886105, type: 3}
       propertyPath: m_RootOrder
       value: 1
