@@ -1169,6 +1169,146 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 138551525541353938, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 375470150081444737, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 410323652123564753, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 493108908555083303, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 797394750600571834, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 1311315898217296487, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 1424828334063143344, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 1685457911665364333, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 1809244359362921539, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 2116175317036218297, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 2124735309674723627, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 2363605479398426718, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 2828691692823918064, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 2881417523514155267, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 3214473005053715809, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 3727103937531527423, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 3742507567414566468, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 4037146641616129880, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 4196563817157213438, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 4362167886995340255, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 4714370636595183065, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 4722481133731134389, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 4732865987289116685, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5036250010221124088, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5112372169508435375, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5305833855558223103, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5350683120019803510, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5490864224004928284, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5527850686815467986, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 5996430919674893712, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 6047771606295333372, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 6125775269300963388, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 6140566088352879865, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 6397386007467409246, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 6496694329652283623, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
     - target: {fileID: 6931520255232512324, guid: c74ecd3e100996a479df601ba1886105, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1217,6 +1357,82 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombinedElephantCameraCrate
       objectReference: {fileID: 0}
+    - target: {fileID: 7062423860895740069, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 7085492275105982069, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 7661336848096791412, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 7819136057741894832, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 7897830693738203531, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 7917388250293330348, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 7944187527138741133, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8033552889571142710, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8091940605411726703, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8103328106646571007, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8130032886282890173, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8232535140302609874, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8306138379442316328, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8374152996355525295, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8669188205097066183, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8686013208119668740, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8691020487158485178, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 8846161393792123807, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
+    - target: {fileID: 9037947008753261610, guid: c74ecd3e100996a479df601ba1886105, type: 3}
+      propertyPath: sfx_group
+      value: 
+      objectReference: {fileID: -2149276802003593664, guid: e048e2dc18e39444fac55106b7a4588b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c74ecd3e100996a479df601ba1886105, type: 3}
 --- !u!1 &543822994 stripped
