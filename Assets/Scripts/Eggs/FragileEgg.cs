@@ -43,8 +43,8 @@ public class FragileEgg : MonoBehaviour
         // if soft, don't crack
         //if (collision.relativeVelocity.magnitude < 2.0) return;
         if (collision.gameObject.layer == 6) Shatter(); // if the elephant stepped on you, break.
-        if (collision.impulse.magnitude < 0.1) return;
-        if (container != null && collision.impulse.magnitude < 0.2) return;
+        if (collision.impulse.magnitude < 0.01) return;
+        if (container != null && collision.impulse.magnitude < 0.08) return;
         if (collision.gameObject.layer == 7 || collision.gameObject.layer == 8) return; // Container layer and egg layer
 
         
