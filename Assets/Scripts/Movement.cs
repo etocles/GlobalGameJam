@@ -45,7 +45,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         bc = GetComponent<BoxCollider>();
 
-        Invoke("PickupCrate", 0.04f);
+        Invoke("PickupCrate", 0.05f);
     }
 
     private void PickupCrate()
