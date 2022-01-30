@@ -14,6 +14,7 @@ public class EndPortal : MonoBehaviour
     {
         if (other.tag == "Elephant")
         {
+            GetComponent<Collider>().enabled = false;
             UIManager.instance?.SetEggCount(0);
             other.GetComponent<Movement>().enabled = false;
             other.GetComponent<TrunkAimer>().enabled = false;
